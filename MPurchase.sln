@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPurchase", "MPurchase.csproj", "{ED7863F8-EB4D-481E-B955-87BFB77A382B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMILLS", "..\..\..\Desktop\Manish\manish\FMILLS\FMILLS.csproj", "{7B42D936-3857-4EEE-AE39-809AEC07BCC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED7863F8-EB4D-481E-B955-87BFB77A382B}.Release|x86.Build.0 = Release|Any CPU
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Debug|x86.ActiveCfg = Debug|x86
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Debug|x86.Build.0 = Debug|x86
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Release|x86.ActiveCfg = Release|x86
+		{7B42D936-3857-4EEE-AE39-809AEC07BCC6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A51B0CD-D3F6-4A22-953D-8062B92E088C}
+	EndGlobalSection
+EndGlobal
