@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Fmill_DLL">
+      <HintPath>packages\Fmill_DLL.dll</HintPath>
+    </Reference>
+    <Reference Include="myclass">
+      <HintPath>packages\myclass.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +57,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogicModels\ComodityLots.cs" />
+    <Compile Include="LogicModels\DataList.cs" />
+    <Compile Include="LogicModels\IOrder.cs" />
+    <Compile Include="LogicModels\PurchaseHead.cs" />
     <Compile Include="Models\LotPurchase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,7 +99,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="LogicModels\" />
+    <Content Include="Resources\Icon_Reload_Refresh.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

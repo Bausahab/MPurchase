@@ -12,6 +12,9 @@ namespace MPurchase.UI
 {
     public partial class ucHead : UserControl
     {
+        LogicModels.PurchaseHead LastPurchase;
+        string TimeSinceLastPurchase = string.Empty;
+        string LastPurchasedetailsaddress = "DefaultAddressHereOrAppConfig";
         public ucHead()
         {
             InitializeComponent();
@@ -22,4 +25,4 @@ namespace MPurchase.UI
 
         }
     }
-}
+

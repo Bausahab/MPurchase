@@ -1,7 +1,7 @@
 ﻿
 namespace MPurchase
 {
-    partial class Form1
+    partial class FrmPurchase
     {
         /// <summary>
         /// Required designer variable.
@@ -31,6 +31,11 @@ namespace MPurchase
         {
             this.tableLayoutPanelBase = new System.Windows.Forms.TableLayoutPanel();
             this.Ftpsss = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.FTP12 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.FTPss = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.CBPy = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -42,10 +47,11 @@ namespace MPurchase
             this.CBBranch = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -70,10 +76,8 @@ namespace MPurchase
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.FTP12 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.FTPss = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.FTP5 = new System.Windows.Forms.TextBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -86,8 +90,6 @@ namespace MPurchase
             this.label20 = new System.Windows.Forms.Label();
             this.FTP3 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.CBBroker = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -99,11 +101,12 @@ namespace MPurchase
             this.tabPageED = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanelBase.SuspendLayout();
             this.Ftpsss.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -120,11 +123,11 @@ namespace MPurchase
             this.tabPageED.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanelBase
             // 
+            this.tableLayoutPanelBase.BackColor = System.Drawing.Color.BurlyWood;
             this.tableLayoutPanelBase.ColumnCount = 1;
             this.tableLayoutPanelBase.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelBase.Controls.Add(this.Ftpsss, 0, 1);
@@ -139,6 +142,8 @@ namespace MPurchase
             // 
             // Ftpsss
             // 
+            this.Ftpsss.Controls.Add(this.button5);
+            this.Ftpsss.Controls.Add(this.button4);
             this.Ftpsss.Controls.Add(this.groupBox10);
             this.Ftpsss.Controls.Add(this.groupBox9);
             this.Ftpsss.Controls.Add(this.groupBox8);
@@ -157,6 +162,69 @@ namespace MPurchase
             this.Ftpsss.TabIndex = 4;
             this.Ftpsss.TabStop = false;
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.FTP12);
+            this.groupBox10.Controls.Add(this.label29);
+            this.groupBox10.Controls.Add(this.label26);
+            this.groupBox10.Controls.Add(this.FTPss);
+            this.groupBox10.Location = new System.Drawing.Point(399, 377);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(163, 103);
+            this.groupBox10.TabIndex = 121;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Purchase Conition";
+            // 
+            // FTP12
+            // 
+            this.FTP12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FTP12.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP12.ForeColor = System.Drawing.Color.Blue;
+            this.FTP12.Location = new System.Drawing.Point(60, 73);
+            this.FTP12.Margin = new System.Windows.Forms.Padding(2);
+            this.FTP12.MaxLength = 5;
+            this.FTP12.Name = "FTP12";
+            this.FTP12.Size = new System.Drawing.Size(55, 22);
+            this.FTP12.TabIndex = 111;
+            this.FTP12.Text = "0.00";
+            this.FTP12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(10, 74);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(46, 17);
+            this.label29.TabIndex = 110;
+            this.label29.Text = "FFA :";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(18, 39);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(38, 17);
+            this.label26.TabIndex = 108;
+            this.label26.Text = "Oil :";
+            // 
+            // FTPss
+            // 
+            this.FTPss.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FTPss.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTPss.ForeColor = System.Drawing.Color.Blue;
+            this.FTPss.Location = new System.Drawing.Point(60, 36);
+            this.FTPss.Margin = new System.Windows.Forms.Padding(2);
+            this.FTPss.MaxLength = 5;
+            this.FTPss.Name = "FTPss";
+            this.FTPss.Size = new System.Drawing.Size(55, 22);
+            this.FTPss.TabIndex = 109;
+            this.FTPss.Text = "0.00";
+            this.FTPss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.CBPy);
@@ -173,7 +241,7 @@ namespace MPurchase
             this.groupBox9.Controls.Add(this.label11);
             this.groupBox9.Location = new System.Drawing.Point(672, 190);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(407, 316);
+            this.groupBox9.Size = new System.Drawing.Size(407, 290);
             this.groupBox9.TabIndex = 121;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Accounts&&Identites";
@@ -193,7 +261,7 @@ namespace MPurchase
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 64);
+            this.label7.Location = new System.Drawing.Point(45, 64);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 17);
@@ -202,11 +270,13 @@ namespace MPurchase
             // 
             // Flt23
             // 
-            this.Flt23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Flt23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Flt23.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Flt23.ForeColor = System.Drawing.Color.Blue;
             this.Flt23.Location = new System.Drawing.Point(127, 179);
             this.Flt23.Margin = new System.Windows.Forms.Padding(2);
             this.Flt23.Name = "Flt23";
-            this.Flt23.Size = new System.Drawing.Size(66, 23);
+            this.Flt23.Size = new System.Drawing.Size(66, 22);
             this.Flt23.TabIndex = 134;
             this.Flt23.Text = "0";
             this.Flt23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -215,7 +285,7 @@ namespace MPurchase
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(16, 30);
+            this.label30.Location = new System.Drawing.Point(64, 30);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(54, 17);
@@ -226,7 +296,7 @@ namespace MPurchase
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(43, 182);
+            this.label36.Location = new System.Drawing.Point(34, 184);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(80, 17);
@@ -237,7 +307,7 @@ namespace MPurchase
             // 
             this.CBBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBBank.FormattingEnabled = true;
-            this.CBBank.Location = new System.Drawing.Point(74, 27);
+            this.CBBank.Location = new System.Drawing.Point(125, 27);
             this.CBBank.Margin = new System.Windows.Forms.Padding(2);
             this.CBBank.MaxLength = 25;
             this.CBBank.Name = "CBBank";
@@ -246,12 +316,14 @@ namespace MPurchase
             // 
             // FltS
             // 
-            this.FltS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FltS.Location = new System.Drawing.Point(155, 233);
+            this.FltS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FltS.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FltS.ForeColor = System.Drawing.Color.Blue;
+            this.FltS.Location = new System.Drawing.Point(127, 233);
             this.FltS.Margin = new System.Windows.Forms.Padding(2);
             this.FltS.MaxLength = 7;
             this.FltS.Name = "FltS";
-            this.FltS.Size = new System.Drawing.Size(66, 23);
+            this.FltS.Size = new System.Drawing.Size(66, 22);
             this.FltS.TabIndex = 132;
             this.FltS.Text = "0";
             this.FltS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -260,7 +332,7 @@ namespace MPurchase
             // 
             this.CBBranch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBBranch.FormattingEnabled = true;
-            this.CBBranch.Location = new System.Drawing.Point(88, 61);
+            this.CBBranch.Location = new System.Drawing.Point(125, 61);
             this.CBBranch.Margin = new System.Windows.Forms.Padding(2);
             this.CBBranch.MaxLength = 25;
             this.CBBranch.Name = "CBBranch";
@@ -271,7 +343,7 @@ namespace MPurchase
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(39, 237);
+            this.label35.Location = new System.Drawing.Point(3, 238);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(111, 17);
@@ -282,12 +354,37 @@ namespace MPurchase
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(18, 101);
+            this.label27.Location = new System.Drawing.Point(11, 99);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(103, 17);
             this.label27.TabIndex = 122;
             this.label27.Text = "Payment By :";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.ForeColor = System.Drawing.Color.Blue;
+            this.textBox10.Location = new System.Drawing.Point(127, 133);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox10.MaxLength = 3;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(60, 22);
+            this.textBox10.TabIndex = 101;
+            this.textBox10.Text = "0";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(55, 138);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 17);
+            this.label11.TabIndex = 100;
+            this.label11.Text = "Days : ";
             // 
             // groupBox8
             // 
@@ -300,47 +397,37 @@ namespace MPurchase
             this.groupBox8.Controls.Add(this.label23);
             this.groupBox8.Controls.Add(this.label21);
             this.groupBox8.Controls.Add(this.label2);
-            this.groupBox8.Location = new System.Drawing.Point(13, 405);
+            this.groupBox8.Location = new System.Drawing.Point(13, 377);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(310, 118);
+            this.groupBox8.Size = new System.Drawing.Size(380, 146);
             this.groupBox8.TabIndex = 120;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Tax";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(231, 74);
+            this.button3.Location = new System.Drawing.Point(243, 102);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(61, 23);
+            this.button3.Size = new System.Drawing.Size(76, 37);
             this.button3.TabIndex = 91;
             this.button3.Text = "EXIT";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(229, 49);
+            this.button2.Location = new System.Drawing.Point(229, 63);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 23);
+            this.button2.Size = new System.Drawing.Size(116, 35);
             this.button2.TabIndex = 90;
             this.button2.Text = "RESET";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(226, 22);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 23);
-            this.button1.TabIndex = 89;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(135, 78);
+            this.textBox5.Location = new System.Drawing.Point(133, 109);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.MaxLength = 20;
             this.textBox5.Name = "textBox5";
@@ -350,7 +437,7 @@ namespace MPurchase
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(133, 51);
+            this.textBox4.Location = new System.Drawing.Point(133, 69);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.MaxLength = 20;
             this.textBox4.Name = "textBox4";
@@ -360,7 +447,7 @@ namespace MPurchase
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(132, 24);
+            this.textBox3.Location = new System.Drawing.Point(132, 22);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.MaxLength = 20;
             this.textBox3.Name = "textBox3";
@@ -371,7 +458,7 @@ namespace MPurchase
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(30, 80);
+            this.label23.Location = new System.Drawing.Point(29, 112);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(99, 17);
@@ -382,7 +469,7 @@ namespace MPurchase
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(10, 54);
+            this.label21.Location = new System.Drawing.Point(10, 72);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(119, 17);
@@ -393,7 +480,7 @@ namespace MPurchase
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 28);
+            this.label2.Location = new System.Drawing.Point(10, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 17);
@@ -440,7 +527,7 @@ namespace MPurchase
             this.Itxtt.Margin = new System.Windows.Forms.Padding(2);
             this.Itxtt.MaxLength = 10;
             this.Itxtt.Name = "Itxtt";
-            this.Itxtt.Size = new System.Drawing.Size(43, 23);
+            this.Itxtt.Size = new System.Drawing.Size(62, 23);
             this.Itxtt.TabIndex = 136;
             // 
             // label33
@@ -467,7 +554,7 @@ namespace MPurchase
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(22, 116);
+            this.label37.Location = new System.Drawing.Point(51, 119);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(63, 17);
@@ -487,7 +574,7 @@ namespace MPurchase
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(18, 33);
+            this.label12.Location = new System.Drawing.Point(12, 34);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(102, 17);
@@ -519,7 +606,7 @@ namespace MPurchase
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(39, 61);
+            this.label14.Location = new System.Drawing.Point(45, 61);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(75, 17);
@@ -528,12 +615,14 @@ namespace MPurchase
             // 
             // FLt
             // 
-            this.FLt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FLt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FLt.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FLt.ForeColor = System.Drawing.Color.Blue;
             this.FLt.Location = new System.Drawing.Point(125, 86);
             this.FLt.Margin = new System.Windows.Forms.Padding(2);
             this.FLt.MaxLength = 7;
             this.FLt.Name = "FLt";
-            this.FLt.Size = new System.Drawing.Size(66, 23);
+            this.FLt.Size = new System.Drawing.Size(66, 22);
             this.FLt.TabIndex = 130;
             this.FLt.Text = "0";
             this.FLt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -563,7 +652,7 @@ namespace MPurchase
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(14, 89);
+            this.label34.Location = new System.Drawing.Point(5, 91);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(109, 17);
@@ -584,6 +673,7 @@ namespace MPurchase
             // 
             this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.ForeColor = System.Drawing.Color.Green;
             this.numericUpDown1.Location = new System.Drawing.Point(3, 19);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(102, 29);
@@ -612,66 +702,47 @@ namespace MPurchase
             this.groupBox6.Controls.Add(this.label16);
             this.groupBox6.Location = new System.Drawing.Point(13, 211);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(650, 192);
+            this.groupBox6.Size = new System.Drawing.Size(650, 160);
             this.groupBox6.TabIndex = 89;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Bill Details";
             this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
-            // FTP12
+            // label1
             // 
-            this.FTP12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FTP12.Location = new System.Drawing.Point(64, 54);
-            this.FTP12.Margin = new System.Windows.Forms.Padding(2);
-            this.FTP12.MaxLength = 5;
-            this.FTP12.Name = "FTP12";
-            this.FTP12.Size = new System.Drawing.Size(41, 23);
-            this.FTP12.TabIndex = 111;
-            this.FTP12.Text = "0.00";
-            this.FTP12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 83);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 17);
+            this.label1.TabIndex = 106;
+            this.label1.Text = "Sauda Rate";
             // 
-            // label29
+            // textBox1
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(14, 55);
-            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(46, 17);
-            this.label29.TabIndex = 110;
-            this.label29.Text = "FFA :";
-            // 
-            // FTPss
-            // 
-            this.FTPss.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FTPss.Location = new System.Drawing.Point(49, 22);
-            this.FTPss.Margin = new System.Windows.Forms.Padding(2);
-            this.FTPss.MaxLength = 5;
-            this.FTPss.Name = "FTPss";
-            this.FTPss.Size = new System.Drawing.Size(38, 23);
-            this.FTPss.TabIndex = 109;
-            this.FTPss.Text = "0.00";
-            this.FTPss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(7, 25);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 17);
-            this.label26.TabIndex = 108;
-            this.label26.Text = "Oil :";
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Blue;
+            this.textBox1.Location = new System.Drawing.Point(109, 80);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.MaxLength = 15;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(69, 22);
+            this.textBox1.TabIndex = 107;
+            this.textBox1.Text = "0.00";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // FTP5
             // 
-            this.FTP5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FTP5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP5.ForeColor = System.Drawing.Color.Blue;
             this.FTP5.Location = new System.Drawing.Point(565, 80);
             this.FTP5.Margin = new System.Windows.Forms.Padding(2);
             this.FTP5.MaxLength = 15;
             this.FTP5.Name = "FTP5";
-            this.FTP5.Size = new System.Drawing.Size(69, 23);
+            this.FTP5.Size = new System.Drawing.Size(69, 22);
             this.FTP5.TabIndex = 105;
             this.FTP5.Text = "0.00";
             this.FTP5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -700,7 +771,7 @@ namespace MPurchase
             this.groupBox5.Size = new System.Drawing.Size(637, 51);
             this.groupBox5.TabIndex = 88;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Iuem Name";
+            this.groupBox5.Text = "Item Name";
             // 
             // CBCommodity
             // 
@@ -759,12 +830,14 @@ namespace MPurchase
             // 
             // FTP1
             // 
-            this.FTP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FTP1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP1.ForeColor = System.Drawing.Color.Blue;
             this.FTP1.Location = new System.Drawing.Point(419, 83);
             this.FTP1.Margin = new System.Windows.Forms.Padding(2);
             this.FTP1.MaxLength = 10;
             this.FTP1.Name = "FTP1";
-            this.FTP1.Size = new System.Drawing.Size(60, 23);
+            this.FTP1.Size = new System.Drawing.Size(60, 22);
             this.FTP1.TabIndex = 33;
             // 
             // label20
@@ -780,12 +853,14 @@ namespace MPurchase
             // 
             // FTP3
             // 
-            this.FTP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FTP3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FTP3.ForeColor = System.Drawing.Color.Blue;
             this.FTP3.Location = new System.Drawing.Point(133, 120);
             this.FTP3.Margin = new System.Windows.Forms.Padding(2);
             this.FTP3.MaxLength = 10;
             this.FTP3.Name = "FTP3";
-            this.FTP3.Size = new System.Drawing.Size(64, 23);
+            this.FTP3.Size = new System.Drawing.Size(64, 22);
             this.FTP3.TabIndex = 35;
             this.FTP3.Text = "0.00";
             this.FTP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -800,29 +875,6 @@ namespace MPurchase
             this.label16.Size = new System.Drawing.Size(72, 17);
             this.label16.TabIndex = 98;
             this.label16.Text = "Amount :";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(121, 133);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox10.MaxLength = 3;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(60, 23);
-            this.textBox10.TabIndex = 101;
-            this.textBox10.Text = "0";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(64, 136);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(59, 17);
-            this.label11.TabIndex = 100;
-            this.label11.Text = "Days : ";
             // 
             // groupBox4
             // 
@@ -906,7 +958,7 @@ namespace MPurchase
             // tabPageADD
             // 
             this.tabPageADD.AutoScroll = true;
-            this.tabPageADD.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.tabPageADD.BackColor = System.Drawing.Color.White;
             this.tabPageADD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPageADD.Controls.Add(this.tableLayoutPanelBase);
             this.tabPageADD.Location = new System.Drawing.Point(4, 24);
@@ -950,43 +1002,37 @@ namespace MPurchase
             this.dataGridView1.Size = new System.Drawing.Size(76, 36);
             this.dataGridView1.TabIndex = 99;
             // 
-            // groupBox10
+            // button1
             // 
-            this.groupBox10.Controls.Add(this.FTP12);
-            this.groupBox10.Controls.Add(this.label29);
-            this.groupBox10.Controls.Add(this.label26);
-            this.groupBox10.Controls.Add(this.FTPss);
-            this.groupBox10.Location = new System.Drawing.Point(329, 405);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(310, 118);
-            this.groupBox10.TabIndex = 121;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Purchase Conition";
+            this.button1.Location = new System.Drawing.Point(228, 17);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 33);
+            this.button1.TabIndex = 89;
+            this.button1.Text = "ADD";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // button4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 83);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 17);
-            this.label1.TabIndex = 106;
-            this.label1.Text = "Sauda Rate";
+            this.button4.Location = new System.Drawing.Point(933, 486);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(146, 33);
+            this.button4.TabIndex = 122;
+            this.button4.Text = "Save Purchase";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // button5
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(109, 80);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 15;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(69, 23);
-            this.textBox1.TabIndex = 107;
-            this.textBox1.Text = "0.00";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.button5.Location = new System.Drawing.Point(783, 486);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(146, 33);
+            this.button5.TabIndex = 123;
+            this.button5.Text = "Save Lot>>";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -994,12 +1040,14 @@ namespace MPurchase
             this.ClientSize = new System.Drawing.Size(1157, 675);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Form1";
+            this.Name = "FrmPurchase";
             this.ShowIcon = false;
             this.Text = "RSS PURCHASE";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanelBase.ResumeLayout(false);
             this.Ftpsss.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
@@ -1020,8 +1068,6 @@ namespace MPurchase
             this.tabPageED.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1085,7 +1131,6 @@ namespace MPurchase
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
@@ -1102,5 +1147,8 @@ namespace MPurchase
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
     }
 }
