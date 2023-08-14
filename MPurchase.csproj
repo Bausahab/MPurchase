@@ -59,7 +59,8 @@
     </Compile>
     <Compile Include="LogicModels\ComodityLots.cs" />
     <Compile Include="LogicModels\DataList.cs" />
-    <Compile Include="LogicModels\IOrder.cs" />
+    <Compile Include="LogicModels\IGst.cs" />
+    <Compile Include="LogicModels\IPurchase.cs" />
     <Compile Include="LogicModels\PurchaseHead.cs" />
     <Compile Include="Models\LotPurchase.cs" />
     <Compile Include="Program.cs" />
@@ -99,9 +100,29 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\1.jpg" />
+    <Content Include="Resources\accountType.png" />
+    <Content Include="Resources\Add.png" />
+    <Content Include="Resources\addBank.png" />
+    <Content Include="Resources\addParty.png" />
+    <Content Include="Resources\bank.ico" />
+    <Content Include="Resources\cancel.jpg" />
+    <Content Include="Resources\Country.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\deleteBank.png" />
+    <Content Include="Resources\deleteParty.png" />
+    <Content Include="Resources\edit2.png" />
+    <Content Include="Resources\editbank.png" />
+    <Content Include="Resources\editParty.png" />
     <Content Include="Resources\Icon_Reload_Refresh.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\ledger.png" />
+    <Content Include="Resources\password.png" />
+    <Content Include="Resources\prefix.png" />
+    <Content Include="Resources\redbin.jpg" />
+    <Content Include="Resources\userADD.png" />
+    <Content Include="Resources\userList.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

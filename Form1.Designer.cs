@@ -31,6 +31,8 @@ namespace MPurchase
         {
             this.tableLayoutPanelBase = new System.Windows.Forms.TableLayoutPanel();
             this.Ftpsss = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.FTP12 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -52,6 +54,7 @@ namespace MPurchase
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -101,9 +104,6 @@ namespace MPurchase
             this.tabPageED = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanelBase.SuspendLayout();
             this.Ftpsss.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -162,6 +162,26 @@ namespace MPurchase
             this.Ftpsss.TabIndex = 4;
             this.Ftpsss.TabStop = false;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(783, 486);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(146, 33);
+            this.button5.TabIndex = 123;
+            this.button5.Text = "Save Lot>>";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(933, 486);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(146, 33);
+            this.button4.TabIndex = 122;
+            this.button4.Text = "Save Purchase";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.FTP12);
@@ -173,7 +193,7 @@ namespace MPurchase
             this.groupBox10.Size = new System.Drawing.Size(163, 103);
             this.groupBox10.TabIndex = 121;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Purchase Conition";
+            this.groupBox10.Text = "Purchase Condition";
             // 
             // FTP12
             // 
@@ -423,6 +443,16 @@ namespace MPurchase
             this.button2.TabIndex = 90;
             this.button2.Text = "RESET";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(228, 17);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 33);
+            this.button1.TabIndex = 89;
+            this.button1.Text = "ADD";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
@@ -1001,36 +1031,6 @@ namespace MPurchase
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(76, 36);
             this.dataGridView1.TabIndex = 99;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(228, 17);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 33);
-            this.button1.TabIndex = 89;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(933, 486);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 33);
-            this.button4.TabIndex = 122;
-            this.button4.Text = "Save Purchase";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(783, 486);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(146, 33);
-            this.button5.TabIndex = 123;
-            this.button5.Text = "Save Lot>>";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // FrmPurchase
             // 
